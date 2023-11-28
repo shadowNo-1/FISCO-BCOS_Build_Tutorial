@@ -4,12 +4,21 @@ How to Construct [FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS) Consorti
 
 This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
-[![Author](https://img.shields.io/badge/author-shadowNo--1-1?logo=github)](https://github.com/shadowNo-1)
+[![Author](https://img.shields.io/badge/author-shadowNo--1-informational?logo=github)](https://github.com/shadowNo-1)
 ![](https://img.shields.io/badge/Ubuntu-22.04.3-informational?style=flat&logo=ubuntu&logoColor=e95420&color=e95420)
 
-![](https://img.shields.io/badge/language-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/license-MIT-informational?style=flat&logo=conventionalcommits&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/FISCO--BCOS-v2.x-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/language-Solidity-informational?style=flat&logo=solidity&logoColor=9b96be&color=2b247c)
+![](https://img.shields.io/badge/license-MIT-informational?style=flat&logo=conventionalcommits&logoColor=fe5196&color=fe5196)
+![](https://img.shields.io/badge/FISCO--BCOS-v2.x-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=194ea0)
+
+## Badge Gather
+![](https://img.shields.io/badge/GNU-2.0-informational?style=flat&logo=gnu&logoColor=white&color=A42E2B)
+![](https://img.shields.io/badge/license-MIT-informational?style=flat&logo=conventionalcommits&logoColor=FE5196&color=FE5196)
+![](https://img.shields.io/badge/JavaScript-2.0-informational?style=flat&logo=javascript&logoColor=F7DF1E&color=F7DF1E)
+![](https://img.shields.io/badge/VueJS-2.0-informational?style=flat&logo=vuedotjs&logoColor=4FC08D&color=4FC08D)
+![](https://img.shields.io/badge/Debian-12-informational?style=flat&logo=debian&logoColor=A81D33&color=A81D33)
+![](https://img.shields.io/badge/Ethereum-2.0-informational?style=flat&logo=ethereum&logoColor=white&color=3C3C3D)
+![](https://img.shields.io/badge/Bootstrap-5.x-informational?style=flat&logo=bootstrap&logoColor=B486F9&color=7952B3)
 
 ![](https://img.shields.io/badge/<WORD_ON_LEFT>-<WORD_ON_RIGHT>-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ## FISCO-BCOS 版本说明
