@@ -4,7 +4,7 @@ How to Construct [FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS) Consorti
 
 This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
-[![Author](https://img.shields.io/badge/author-shadowNo--1-informational?style=flat&logo=ubuntu&logoColor=181717&color=green)](https://github.com/shadowNo-1)
+[![Author](https://img.shields.io/badge/author-shadowNo--1-informational?style=flat&logo=github&logoColor=181717&color=green)](https://github.com/shadowNo-1)
 ![](https://img.shields.io/badge/Ubuntu-22.04.3-informational?style=flat&logo=ubuntu&logoColor=e95420&color=e95420)
 
 ![](https://img.shields.io/badge/language-Solidity-informational?style=flat&logo=solidity&logoColor=9b96be&color=2b247c)
