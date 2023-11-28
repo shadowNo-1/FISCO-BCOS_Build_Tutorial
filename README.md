@@ -11,6 +11,8 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 ![](https://img.shields.io/badge/FISCO--BCOS-v2.x-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 
 ![](https://img.shields.io/badge/<WORD_ON_LEFT>-<WORD_ON_RIGHT>-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
+## FISCO-BCOS 版本说明
+FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)和3.x[文档链接]两个大版本，用户可以根据不同的场景选择:
 
 ## 搭建第一个区块链网络
 
