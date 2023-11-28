@@ -23,13 +23,18 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 ## 基础环境配置
 ### 备份源列表
 
+Ubuntu采用`apt`作为软件安装工具，其镜像源列表记录在`/etc/apt/source.list`文件中。
 将`source.list`复制为`source.list.bak`备份
 
-```bash
+```
 sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
 ```
 
-### 国内源替换
+### 镜像源列表替换
+使用[gedit](https://github.com/GNOME/gedit)或[vim](https://github.com/vim/vim)修改`sources.list`文件
+```
+gedit /etc/apt/sources.list
+```
 选择对应版本的源替换，详见清华源[help](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
 
