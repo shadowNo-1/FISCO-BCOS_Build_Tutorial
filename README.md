@@ -26,6 +26,10 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
 
 
+### 国内源替换
+选择对应版本的源替换，详见清华源[help](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+
+
 ## 搭建第一个区块链网络
 
 
