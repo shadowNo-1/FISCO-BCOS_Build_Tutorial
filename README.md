@@ -21,6 +21,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 - [v3.x](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/)为当前FISCO-BCOS最新的版本，采用微服务的架构，已发布正式版。
 
 ## 基础环境配置
+### 备份源列表
 
 将`source.list`复制为`source.list.bak`备份
 
