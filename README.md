@@ -21,7 +21,8 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 - [v3.x](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/)为当前FISCO-BCOS最新的版本，采用微服务的架构，已发布正式版。
 
 ## 基础环境配置
-**本文以`Ubuntu 22.04.3`为案例**
+> [!IMPORTANT]
+> **本文以`Ubuntu 22.04.3`为案例**
 - ### 备份源列表
 
 Ubuntu采用`apt`作为软件安装工具，其镜像源列表记录在`/etc/apt/source.list`文件中。
