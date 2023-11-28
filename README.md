@@ -15,7 +15,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 ## 搭建第一个区块链网络
 
 
-##Golang
+## Golang
 
 1、安装curl、git
 
