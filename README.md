@@ -21,7 +21,8 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 - [v3.x](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/)为当前FISCO-BCOS最新的版本，采用微服务的架构，已发布正式版。
 
 ## 基础环境配置
-### 备份源列表
+**本文以`Ubuntu 22.04.3`为案例**
+- ### 备份源列表
 
 Ubuntu采用`apt`作为软件安装工具，其镜像源列表记录在`/etc/apt/source.list`文件中。
 将`source.list`复制为`source.list.bak`备份
@@ -30,12 +31,52 @@ Ubuntu采用`apt`作为软件安装工具，其镜像源列表记录在`/etc/apt
 sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
 ```
 
-### 镜像源列表替换
+- ### 镜像源列表替换
 使用[gedit](https://github.com/GNOME/gedit)或[vim](https://github.com/vim/vim)修改`sources.list`文件
 ```
 gedit /etc/apt/sources.list
 ```
-选择对应版本的源替换，详见清华源[help](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+建议将常用镜像源保存在`/etc/apt`目录下，并命名为类似`source.list.源名称`的形式，需要使用时直接复制替换`source.list`文件即可。
+### 可用的中国内地开源镜像站
+- #### 清华源<sub>（截止至2023-11-28T16:50:06 GMT+8）</sub>
+请选择对应版本的源替换，详见清华大学开源软件镜像站[help](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+
+deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+```
+- #### 中科大<sub>（截止至2023-11-28T17:15:15 GMT+8）</sub>
+请选择对应版本的源替换，详见中国科学技术大学开源软件镜像站[help]([https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/](https://mirrors.ustc.edu.cn/help/ubuntu.html))
+```
+# 默认注释了源码仓库，如有需要可自行取消注释
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+```
+
 
 
 ## 搭建第一个区块链网络
