@@ -16,11 +16,14 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 ·v2.x与v3.x版本互不兼容，但后续会同时保持维护、迭代、更新。
 
-
 ·v2.x是目前的稳定版本，已经经过多个机构、多个应用，长时间在生产环境中的实践检验，具备金融级的高性能、高可用性及高安全性。该版本会持续进行维护。用户当前有生产级的使用需求，可以直接使用v2.x即可。
 
-
 ·v3.x为当前FISCO-BCOS最新的版本，采用微服务的架构，已发布正式版。
+
+## 基础环境配置
+将source.list复制为source.list.bak备份
+sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
+
 
 ## 搭建第一个区块链网络
 
