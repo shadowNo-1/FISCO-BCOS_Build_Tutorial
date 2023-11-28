@@ -19,6 +19,9 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 ![](https://img.shields.io/badge/Debian-12-informational?style=flat&logo=debian&logoColor=A81D33&color=A81D33)
 ![](https://img.shields.io/badge/Ethereum-2.0-informational?style=flat&logo=ethereum&logoColor=white&color=3C3C3D)
 ![](https://img.shields.io/badge/Bootstrap-5.3.2-informational?style=flat&logo=bootstrap&logoColor=B486F9&color=7952B3)
+![](https://img.shields.io/badge/ArchLinux-5-informational?style=flat&logo=archlinux&logoColor=1793D1&color=1793D1)
+![](https://img.shields.io/badge/KaliLinux-10-informational?style=flat&logo=kalilinux&logoColor=white&color=557C94)
+![](https://img.shields.io/badge/Bootstrap-5.3.2-informational?style=flat&logo=bootstrap&logoColor=B486F9&color=7952B3)
 
 ![](https://img.shields.io/badge/<WORD_ON_LEFT>-<WORD_ON_RIGHT>-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ## FISCO-BCOS 版本说明
