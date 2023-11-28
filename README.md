@@ -37,7 +37,10 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
 gedit /etc/apt/sources.list
 ```
 建议将常用镜像源保存在`/etc/apt`目录下，并命名为类似`source.list.源名称`的形式，需要使用时直接复制替换`source.list`文件即可。
+
 ### 可用的中国内地开源镜像站
+> [!TIP]
+> 如要用于其他版本，把`jammy`换成其他版本代号即可: ***22.04***:`jammy`；***20.04***:`focal`；***18.04***:`bionic`；***16.04***:`xenial`；***14.04***:`trusty`。
 - #### 清华源<sub>（截止至2023-11-28T16:50:06 GMT+8）</sub>
 请选择对应版本的源替换，详见清华大学开源软件镜像站[help](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 ```
