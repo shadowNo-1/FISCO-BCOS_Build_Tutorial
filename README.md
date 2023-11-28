@@ -60,8 +60,10 @@ deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe m
 # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 # # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 ```
-- #### 中科大<sub>（截止至2023-11-28T17:15:15 GMT+8）</sub>
-请选择对应版本的源替换，详见中国科学技术大学开源软件镜像站[help]([https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/](https://mirrors.ustc.edu.cn/help/ubuntu.html))
+- #### 中科大源<sub>（截止至2023-11-28T17:15:15 GMT+8）</sub>
+请选择对应版本的源替换，详见中国科学技术大学开源软件镜像站[help](https://mirrors.ustc.edu.cn/help/ubuntu.html)
+
+中国科学技术大学开源软件镜像站[存储库文件生成器](https://mirrors.ustc.edu.cn/repogen/)
 ```
 # 默认注释了源码仓库，如有需要可自行取消注释
 deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
