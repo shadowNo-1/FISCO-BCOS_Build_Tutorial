@@ -7,7 +7,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 [![Author](https://img.shields.io/badge/author-shadowNo--1-informational?style=flat&logo=github&logoColor=181717&color=green)](https://github.com/shadowNo-1)
 ![](https://img.shields.io/badge/license-GNU-informational?style=flat&logo=gnu&logoColor=white&color=A42E2B)
 ![](https://img.shields.io/badge/Ubuntu-22.04.3-informational?style=flat&logo=ubuntu&logoColor=e95420&color=e95420)
-[![FISCO--BCOS](https://is.gd/V01vho)](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)
+[![FISCO--BCOS](https://is.gd/71u78p)](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)
 
 ## FISCO-BCOS 版本说明<sub>*(截止至2023-11-28 T 13:46:11 GMT+8)*</sub>
 FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)和[3.x](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/)两个大版本，用户可以根据不同的场景选择:
@@ -137,7 +137,11 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
   ```bash
   bash build_chain.sh -l 127.0.0.1:4 -p 30300,20200,8545 -g -G
   ```
-  其中`-g`表示生成国密配置，`-G`表示使用国密SSL连接
+  > 其中`-g`表示生成国密配置，`-G`表示使用国密SSL连接
+  > 
+  > [!NOTE]
+  > - 其中-p选项指定起始端口，分别是p2p_port,channel_port,jsonrpc_port
+  > - 出于安全性和易用性考虑，v2.3.0版本最新配置将listen_ip拆分成jsonrpc_listen_ip和channel_listen_ip，但仍保留对listen_ip的解析功能，详细请参考[这里](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/manual/configuration.html#rpc)
 
 
 
