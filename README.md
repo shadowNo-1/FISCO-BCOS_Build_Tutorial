@@ -106,7 +106,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
   ```
 
 
-# 搭建第一个区块链网络
+# ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/blob/main/img/FISCO_BCOS.svg)搭建第一个区块链网络
 
 ## 1. 搭建单群组FISCO BCOS联盟链
 - ### 第一步. 安装依赖
