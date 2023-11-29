@@ -121,6 +121,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
     ## 下载脚本
     curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v2.9.1/build_chain.sh && chmod u+x build_chain.sh
   ```
+  ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/1b17845b-2b1e-4b2a-881f-1318964d31ff)
  > [!NOTE]
  > 如果因为网络问题导致长时间无法下载`build_chain.sh`脚本，请尝试：<br />
  > ```bash
