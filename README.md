@@ -149,11 +149,19 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
  > ```
 
 - ### 第三步. 搭建单群组4节点联盟链
+  📥安装net-tools网络管理工具
+  ```bash
+  sudo apt install net-tools
+  ```
+  🚨执行下列命令，检查机器的`30300~30303`，`20200~20203`，`8545~8548`端口是否被占用
+  ```bash
+  netstat -an | grep tcp
+  ```
   在fisco目录下执行如下指令，生成一条单群组4节点的FISCO链。 请确保机器的`30300~30303`，`20200~20203`，`8545~8548`端口没有被占用。
   ```bash
   bash build_chain.sh -l 127.0.0.1:4 -p 30300,20200,8545
   ```
-  :round_pushpin:[国密](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/manual/guomi_crypto.html)版本请执行：
+  🔔[国密](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/manual/guomi_crypto.html)版本请执行：
   ```bash
   bash build_chain.sh -l 127.0.0.1:4 -p 30300,20200,8545 -g -G
   ```
@@ -170,7 +178,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
   ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/128e54dc-2b49-4501-b65d-45aa7c81a02d)
 
   - ### 第四步. 启动FISCO BCOS链
-    启动所有节点▶️
+    ▶️启动所有节点
     ```bash
     bash nodes/127.0.0.1/start_all.sh
     ```
