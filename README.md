@@ -186,6 +186,35 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
     
     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/ca2bee08-b491-4376-9d98-715074a432eb)
 
+ - ### 第五步. 检查进程
+   🧐检查进程是否启动
+   ```bash
+   ps -ef | grep -v grep | grep fisco-bcos
+   ```
+   ⬇️正常情况会输出类似以下的4个进程； 如果进程数缺失，则是进程启动失败（通常是端口被占用导致的）
+   ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/4b026536-2cf1-4446-bda2-006249791cfd)
+ - ### 第六步. 检查日志输出
+   - 执行下列指令，查看节点node0链接的节点数
+     ```bash
+     tail -f nodes/127.0.0.1/node0/log/log*  | grep connected
+     ```
+     通常情况下会不停地输出连接信息，从输出的信息可以看出node0与另外3个节点有连接。<br />
+     ⛔按`Ctrl`+`C`终止输出<br />
+   
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/6805e0a3-b914-4f40-9fef-4d14d17c9f18)<br />
+   
+   - 执行下面指令，检查是否在共识
+     ```bash
+     tail -f nodes/127.0.0.1/node0/log/log*  | grep +++
+     ```
+     正常情况会不停输出带有`++++Generating seal`的日志，即表示共识正常。<br />
+     ⛔按`Ctrl`+`C`终止输出<br />
+     
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/5e3b378f-6c77-4d82-9932-04321a834170)
+
+
+
+
     
 
   
