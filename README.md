@@ -9,7 +9,7 @@ This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 ![](https://img.shields.io/badge/language-Solidity-informational?style=flat&logo=solidity&logoColor=9b96be&color=2b247c)
 ![](https://img.shields.io/badge/license-MIT-informational?style=flat&logo=conventionalcommits&logoColor=fe5196&color=fe5196)
-![](https://img.shields.io/badge/FISCO--BCOS-v2.x-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=194ea0)
+[![FISCO--BCOS](https://is.gd/V01vho)](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)
 
 ## FISCO-BCOS 版本说明
 FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)和[3.x](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/)两个大版本，用户可以根据不同的场景选择:
