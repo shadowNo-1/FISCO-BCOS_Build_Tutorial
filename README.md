@@ -39,10 +39,10 @@ gedit /etc/apt/sources.list
 
 ### 可用的中国内地开源镜像站
 > [!TIP]
-> 如要用于其他版本，把`jammy`换成其他版本代号即可: ***22.04***:`jammy`；***20.04***:`focal`；***18.04***:`bionic`；***16.04***:`xenial`；***14.04***:`trusty`。
+> 如需用于其他版本，将`jammy`换成其他版本代号即可: ***22.04***:`jammy`；***20.04***:`focal`；***18.04***:`bionic`；***16.04***:`xenial`；***14.04***:`trusty`。
 - #### 清华源<sub>（截止至2023-11-28T16:50:06 GMT+8）</sub>
 请选择对应版本的源替换，详见清华大学开源软件镜像站[help](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
-```
+```bash
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
@@ -62,7 +62,7 @@ deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe m
 请选择对应版本的源替换，详见中国科学技术大学开源软件镜像站[help](https://mirrors.ustc.edu.cn/help/ubuntu.html)
 
 中国科学技术大学开源软件镜像站[存储库文件生成器](https://mirrors.ustc.edu.cn/repogen/)
-```
+```bash
 # 默认注释了源码仓库，如有需要可自行取消注释
 deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
 # deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
@@ -80,8 +80,23 @@ deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe
 # deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 # deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 ```
+- #### 浙大源<sub>（截止至2023-11-29T09:24:05 GMT+8）</sub>
+请选择对应版本的源替换，详见浙江大学开源软件镜像站[docs](http://mirrors.zju.edu.cn/docs/ubuntu/)
+```bash
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy main restricted universe multiverse
+# deb-src https://mirrors.zju.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+# deb-src https://mirrors.zju.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+# deb-src https://mirrors.zju.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.zju.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+# deb-src https://mirrors.zju.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 
-
+# 预发布软件源，不建议启用
+# deb https://mirrors.zju.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+# deb-src https://mirrors.zju.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+```
 
 ## 搭建第一个区块链网络
 
