@@ -115,7 +115,11 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
   ```
 - ### 第二步. 创建操作目录, 下载安装脚本
   ```bash
-  sudo apt install -y openssl curl
+    ## 创建操作目录
+    cd ~ && mkdir -p fisco && cd fisco
+    
+    ## 下载脚本
+    curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v2.9.1/build_chain.sh && chmod u+x build_chain.sh
   ```
 
 
