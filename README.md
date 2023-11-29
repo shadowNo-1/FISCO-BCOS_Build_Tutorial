@@ -167,6 +167,19 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
   > - 为便于开发和体验，channel_listen_ip参考配置是 0.0.0.0 ，出于安全考虑，请根据实际业务网络情况，修改为安全的监听地址，如：内网IP或特定的外网IP
 
   命令执行成功会输出`All completed`。如果执行出错，请检查`nodes/build.log`文件中的错误信息。
+  ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/128e54dc-2b49-4501-b65d-45aa7c81a02d)
+
+  - ### 第四步. 启动FISCO BCOS链
+    启动所有节点▶️
+    ```bash
+    bash nodes/127.0.0.1/start_all.sh
+    ```
+    启动成功会输出类似下面内容的响应。否则请使用`netstat -an | grep tcp`检查机器的`30300~30303`，`20200~20203`，`8545~8548`端口是否被占用。
+    
+    ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/ca2bee08-b491-4376-9d98-715074a432eb)
+
+    
+
   
 
 
