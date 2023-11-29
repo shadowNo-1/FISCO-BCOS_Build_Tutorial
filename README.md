@@ -18,7 +18,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 - [v3.x](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/)为当前FISCO-BCOS最新的版本，采用微服务的架构，已发布正式版。
 
-## 本文所用实例系统环境配置
+## :information_source:本文所用实例系统环境配置
 ```bash
 ----------------------------------------------------------------------
  CPU Model            : 11th Gen Intel(R) Core(TM) i5-11260H @ 2.60GHz
