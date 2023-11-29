@@ -1,4 +1,4 @@
-# FISCO-BCOS_Build_Tutorial
+![FISCO_BCOS_Logo](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/8b79460d-a484-40fe-a2a2-3a9d4579a7d5)# FISCO-BCOS_Build_Tutorial
 
 How to Construct [FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS) Consortium Chain and Common Errors
 
@@ -107,6 +107,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 
 # 搭建第一个区块链网络
+
 ## 1. 搭建单群组FISCO BCOS联盟链
 - ### 第一步. 安装依赖
   安装ubuntu依赖
