@@ -129,9 +129,15 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
  > ```
 
 - ### 第三步. 搭建单群组4节点联盟链
-
-
-
+  在fisco目录下执行如下指令，生成一条单群组4节点的FISCO链。 请确保机器的`30300~30303`，`20200~20203`，`8545~8548`端口没有被占用。
+  ```bash
+  bash build_chain.sh -l 127.0.0.1:4 -p 30300,20200,8545
+  ```
+  :round_pushpin:[国密](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/manual/guomi_crypto.html)版本请执行：
+  ```bash
+  bash build_chain.sh -l 127.0.0.1:4 -p 30300,20200,8545 -g -G
+  ```
+  其中`-g`表示生成国密配置，`-G`表示使用国密SSL连接
 
 
 
