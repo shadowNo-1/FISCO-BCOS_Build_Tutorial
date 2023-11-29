@@ -30,12 +30,18 @@ Ubuntu采用`apt`作为软件安装工具，其镜像源列表记录在`/etc/apt
 sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
 ```
 
-- ### 镜像源列表替换
+- ### 镜像源列表替换<sub>[可用的中国内地开源镜像站](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/#%E5%8F%AF%E7%94%A8%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%86%85%E5%9C%B0%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99)</sub>
 使用[gedit](https://github.com/GNOME/gedit)或[vim](https://github.com/vim/vim)修改`sources.list`文件
 ```
 gedit /etc/apt/sources.list
 ```
 建议将常用镜像源保存在`/etc/apt`目录下，并命名为类似`source.list.源名称`的形式，需要使用时直接复制替换`source.list`文件即可。
+
+- ### 镜像源列表更新
+修改完成后保存`source.list`文件后执行更新
+```bash
+sudo apt update
+```
 
 ### 可用的中国内地开源镜像站
 > [!TIP]
@@ -97,6 +103,7 @@ deb https://mirrors.zju.edu.cn/ubuntu/ jammy-security main restricted universe m
 # deb https://mirrors.zju.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 # deb-src https://mirrors.zju.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 ```
+
 
 ## 2、搭建第一个区块链网络
 
