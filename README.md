@@ -138,10 +138,16 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
   bash build_chain.sh -l 127.0.0.1:4 -p 30300,20200,8545 -g -G
   ```
   > 其中`-g`表示生成国密配置，`-G`表示使用国密SSL连接
-  > 
+  
+<br />
+
   > [!NOTE]
   > - 其中-p选项指定起始端口，分别是p2p_port,channel_port,jsonrpc_port
-  > - 出于安全性和易用性考虑，v2.3.0版本最新配置将listen_ip拆分成jsonrpc_listen_ip和channel_listen_ip，但仍保留对listen_ip的解析功能，详细请参考[这里](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/manual/configuration.html#rpc)
+  > - 出于安全性和易用性考虑，v2.3.0版本最新配置将listen_ip拆分成jsonrpc_listen_ip和channel_listen_ip，但仍保留对listen_ip的解析功能，详细请参考[配置RPC](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/manual/configuration.html#rpc)
+  > - 为便于开发和体验，channel_listen_ip参考配置是 0.0.0.0 ，出于安全考虑，请根据实际业务网络情况，修改为安全的监听地址，如：内网IP或特定的外网IP
+
+  命令执行成功会输出`All completed`。如果执行出错，请检查`nodes/build.log`文件中的错误信息。
+  
 
 
 
