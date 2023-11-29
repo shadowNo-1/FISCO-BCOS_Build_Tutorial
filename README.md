@@ -5,10 +5,8 @@ How to Construct [FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS) Consorti
 This is [shadowNo-1](https://github.com/shadowNo-1)'s private note
 
 [![Author](https://img.shields.io/badge/author-shadowNo--1-informational?style=flat&logo=github&logoColor=181717&color=green)](https://github.com/shadowNo-1)
+![](https://img.shields.io/badge/license-GNU-informational?style=flat&logo=gnu&logoColor=white&color=A42E2B)
 ![](https://img.shields.io/badge/Ubuntu-22.04.3-informational?style=flat&logo=ubuntu&logoColor=e95420&color=e95420)
-
-![](https://img.shields.io/badge/language-Solidity-informational?style=flat&logo=solidity&logoColor=9b96be&color=2b247c)
-![](https://img.shields.io/badge/license-MIT-informational?style=flat&logo=conventionalcommits&logoColor=fe5196&color=fe5196)
 [![FISCO--BCOS](https://is.gd/V01vho)](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)
 
 ## FISCO-BCOS 版本说明
