@@ -18,6 +18,25 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 - [v3.x](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/)为当前FISCO-BCOS最新的版本，采用微服务的架构，已发布正式版。
 
+## 本文所用实例系统环境配置
+```bash
+----------------------------------------------------------------------
+ CPU Model            : 11th Gen Intel(R) Core(TM) i5-11260H @ 2.60GHz
+ CPU Cores            : 4 Cores 2611.211 MHz x86_64
+ CPU Cache            : 12288 KB 
+ OS                   : Ubuntu 22.04.3 LTS (64 Bit) VMware
+ Kernel               : 6.2.0-37-generic
+ Total Space          : 13.2 GB / 20.7 GB 
+ Total RAM            : 952 MB / 3871 MB (1142 MB Buff)
+ Total SWAP           : 0 MB / 2139 MB
+ Uptime               : 0 days 0 hour 4 min
+ Load Average         : 0.11, 0.12, 0.05
+ TCP CC               : cubic
+----------------------------------------------------------------------
+```
+![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/63b9e851-f6d8-4fb4-be90-84e5d93cd014)
+
+
 ## 1、基础环境配置
 > [!IMPORTANT]
 > **本文以`Ubuntu 22.04.3`为案例**
