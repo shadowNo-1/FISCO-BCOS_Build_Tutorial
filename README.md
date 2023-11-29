@@ -210,14 +210,69 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
      正常情况会不停输出带有`++++Generating seal`的日志，即表示共识正常。<br />
      ⛔按`Ctrl`+`C`终止输出<br />
      
-     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/5e3b378f-6c77-4d82-9932-04321a834170)
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/5e3b378f-6c77-4d82-9932-04321a834170)<br />
+     <br />
+     
+## 2. 配置及使用控制台
+   > [!IMPORTANT]
+   > - `console 1.x`系列基于[Web3SDK](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/sdk/java_sdk.html)实现，`console 2.6`之后基于[JavaSDK](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/sdk/java_sdk/index.html)实现，最新版本控制台基于 `JavaSDK` 实现
+   > - 2.6及其以上版本控制台使用文档请参考[2.6+ docs](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/console/console_of_java_sdk.html) ，1.x版本控制台使用文档请参考[1.x docs](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/console/console.html)
+   > - 可通过命令`./start.sh --version`查看当前控制台版本
+   > - 基于[Web3SDK](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/sdk/java_sdk.html)开发应用时将**Solidity**代码转换为**Java**代码时，必须使用**1.x**版本控制台，具体请参考[控制台使用说明](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/console/download_console.html)
 
+   在控制台链接**FISCO BCOS**节点，实现查询**区块链状态、部署调用合约**等功能，能够快速获取到所需要的信息。2.6版本控制台指令详细介绍参考[2.6+ docs](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/console/console_of_java_sdk.html)，1.x版本控制台指令详细介绍参考[1.x docs](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/console/console.html)。
 
+   - ### 第一步. 准备依赖
+     - 📥安装Java （推荐使用Java 14）。
+       ```bash
+       # ubuntu系统安装java
+       sudo apt install -y default-jdk
+       
+       #centos系统安装java
+       sudo yum install -y java java-devel
+       ```
+       
+     - 获取控制台并回到fisco目录
+       ```bash
+       cd ~/fisco && curl -LO https://github.com/FISCO-BCOS/console/releases/download/v2.9.2/download_console.sh && bash download_console.sh
+       ```
+       🔔如果因为网络问题导致长时间无法下载，请尝试：
+       ```bash
+       cd ~/fisco && curl -#LO https://gitee.com/FISCO-BCOS/console/raw/master-2.0/tools/download_console.sh && bash download_console.sh
+       ```
+       
+     - 拷贝控制台配置文件
+     
+       🚨若节点未采用默认端口，请将文件中的20200替换成节点对应的channel端口。
+       ```bash
+       # 最新版本控制台使用如下命令拷贝配置文件
+       cp -n console/conf/config-example.toml console/conf/config.toml
+       ```
 
-
+     - 配置控制台证书
+       > ⚠️使用***1.x***版本控制台时：<br />
+       > 🚨搭建***国密版***时，如果使用国密SSL请执行：<br />
+       > ```bash
+       > cp nodes/127.0.0.1/sdk/gm/* console/conf/
+       > ```
+       > 🚨搭建***国密版***时，请修改`applicationContext.xml`中`encryptType`修改为`1` <br />
     
+        ```bash
+        cp -r nodes/127.0.0.1/sdk/* console/conf/
+        ```
+       ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/245e307a-f954-44cb-b029-38fa08eb6670)
+   - ### 第二步. 启动并使用控制台
+     - 启动控制台
+        ```bash
+        cd ~/fisco/console && bash start.sh
+        ```
+       输出**Welcome to FISCO BCOS console!**及相关信息表明启动成功，否则请检查`conf/config.toml`中**节点端口**配置是否正确
+       ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/976bda4d-451a-4ebe-b185-aa8110821929) <br />
+       🔔若**1.x**控制台启动失败，参考[Web3SDK启动失败场景](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/faq/connect.html)
 
-  
+
+
+
 
 
 
