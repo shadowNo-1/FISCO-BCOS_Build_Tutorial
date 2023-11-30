@@ -480,9 +480,11 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 
 
-
+## 最后编辑日期
+   2023-11-30 T 16:46:08 GMT+8
+   
 ## 引用以及许可
-部分内容转自FISCO BCOS技术文档
+   部分内容转自FISCO BCOS技术文档
 
 
 
