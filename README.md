@@ -480,11 +480,22 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 
 
-## 最后编辑日期
+## ⏰最后编辑日期
    2023-11-30 T 16:46:08 GMT+8
    
-## 引用以及许可
-   部分内容转自FISCO BCOS技术文档
+## 📚Reference and Citation
+   [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/) <br />
+   [中科大开源软件镜像站](https://mirrors.ustc.edu.cn/) <br />
+   [浙江大学开源软件镜像站](https://mirrors.zju.edu.cn/) <br />
+   [Ethereum Development Documentation](https://ethereum.org/en/developers/docs/) <br />
+   [FISCO BCOS技术文档](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/index.html) <br />
+
+## 📜License
+   ![](https://img.shields.io/badge/license-GNU-informational?style=flat&logo=gnu&logoColor=white&color=A42E2B)
+   
+   GNU General Public License v3.0
+   
+   Please see [LICENSE](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/blob/main/LICENSE) for details.
 
 
 
