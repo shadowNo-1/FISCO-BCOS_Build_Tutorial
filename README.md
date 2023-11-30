@@ -504,7 +504,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 
 ****  
-<p align = "center">🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷以下内容为杂记，勿作参考🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹</p>  
+<p align = "center">🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷以下内容为杂记，勿作参考🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹</p>  
 
 ****
 
