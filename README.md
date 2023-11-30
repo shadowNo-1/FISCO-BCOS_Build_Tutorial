@@ -272,12 +272,105 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
        输出**Welcome to FISCO BCOS console!**及相关信息表明启动成功，否则请检查`conf/config.toml`中**节点端口**配置是否正确
        ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/976bda4d-451a-4ebe-b185-aa8110821929) <br />
        🔔若**1.x**控制台启动失败，参考[Web3SDK启动失败场景](https://fisco-bcos-documentation.readthedocs.io/zh-cn/latest/docs/faq/connect.html)
+     - 用控制台获取信息
+       
+       📜获取客户端版本
+       ```bash
+       getNodeVersion
+       ```
+       ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/9e948e56-a518-418b-849d-d792b1caea20)
+       
+       📜获取节点信息
+       ```bash
+       getPeers
+       ```
+       ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/a61e327c-590f-4c21-8bc5-16b2339ef8f1)
 
+       📄全部输出结果：
+       ```bash
+       =============================================================================================
+       Welcome to FISCO BCOS console(2.9.2)!
+       Type 'help' or 'h' for help. Type 'quit' or 'q' to quit console.
+        ________ ______  ______   ______   ______       _______   ______   ______   ______  
+       |        |      \/      \ /      \ /      \     |       \ /      \ /      \ /      \ 
+       | $$$$$$$$\$$$$$|  $$$$$$|  $$$$$$|  $$$$$$\    | $$$$$$$|  $$$$$$|  $$$$$$|  $$$$$$\
+       | $$__     | $$ | $$___\$| $$   \$| $$  | $$    | $$__/ $| $$   \$| $$  | $| $$___\$$
+       | $$  \    | $$  \$$    \| $$     | $$  | $$    | $$    $| $$     | $$  | $$\$$    \ 
+       | $$$$$    | $$  _\$$$$$$| $$   __| $$  | $$    | $$$$$$$| $$   __| $$  | $$_\$$$$$$\
+       | $$      _| $$_|  \__| $| $$__/  | $$__/ $$    | $$__/ $| $$__/  | $$__/ $|  \__| $$
+       | $$     |   $$ \\$$    $$\$$    $$\$$    $$    | $$    $$\$$    $$\$$    $$\$$    $$
+        \$$      \$$$$$$ \$$$$$$  \$$$$$$  \$$$$$$      \$$$$$$$  \$$$$$$  \$$$$$$  \$$$$$$
+       
+       =============================================================================================
+       [group:1]> getNodeVersion  # 获取客户端版本
+       ClientVersion{
+           version='2.9.1',
+           supportedVersion='2.9.1',
+           chainId='1',
+           buildTime='20220922 08:57:35',
+           buildType='Linux/g++/Release',
+           gitBranch='HEAD',
+           gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'
+       }
+       
+       [group:1]> getPeers  # 获取节点信息
+       [
+           PeerInfo{
+               nodeID='aa605d5f61b457dc4e9519066534f0ebb2e801fd44694a31dab2bf8e8ae583527d5001d27430886d50db923d5c99ac4b911bad07f477844323b03228dfbae0b6',
+               iPAndPort='127.0.0.1:30301',
+               node='node1',
+               agency='agency',
+               topic='[
+                   _block_notify_1
+               ]'
+           },
+           PeerInfo{
+               nodeID='de606df6456ad9a168835c7b28300bb6301fea1b94bfd7eb8d4d9a3c335df2fc6925a254cbb7b60b806b06ac3d6efa7d6612208e7be3b86573f24c684464c99b',
+               iPAndPort='127.0.0.1:30303',
+               node='node3',
+               agency='agency',
+               topic='[
+                   
+               ]'
+           },
+           PeerInfo{
+               nodeID='11703407d4960298f1ef21bd53d366801b05baa39d576475d0c9c7902c28ddf7914c92c1f052a1b4db50a8a35c6ed2e1579e825fa155931529cb32ce10866fce',
+               iPAndPort='127.0.0.1:30302',
+               node='node2',
+               agency='agency',
+               topic='[
+                   
+               ]'
+           }
+       ]
+       
+       [group:1]>
+       ```
+## 3. 部署及调用HelloWorld合约
 
-
-
-
-
+   - ### 第一步. 编写HelloWorld合约
+     HelloWorld合约提供两个接口，分别是`get()`和`set()`，用于获取/设置合约变量`name`。合约内容如下:
+     ```solidity
+     pragma solidity ^0.4.24;
+     
+     contract HelloWorld {
+         string name;
+     
+         function HelloWorld() {
+             name = "Hello, World!";
+         }
+     
+         function get()constant returns(string) {
+             return name;
+         }
+     
+         function set(string n) {
+             name = n;
+         }
+     }
+     Copy to clipboard
+第二步. 部署HelloWorld合约
+     ```
 
 
 
