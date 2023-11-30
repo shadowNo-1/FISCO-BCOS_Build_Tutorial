@@ -481,7 +481,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 
 ## ⏰最后编辑日期
-   2023-11-30 T 17:22:23 GMT+8
+   2023-11-30 T 17:25:53 GMT+8
    
 ## 📚Reference and Citation
    [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/) <br />
@@ -504,7 +504,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 
 ****  
-<p align = "center">🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷以下内容为杂记，勿作参考🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹</p>  
+<p align = "center"><b>🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷以下内容为杂记，勿作参考🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹🔷🔹<b></p>  
 
 ****
 
