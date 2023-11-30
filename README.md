@@ -127,6 +127,7 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
 
 # ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/blob/main/img/FISCO_BCOS.svg)搭建第一个区块链网络
 [![FISCO--BCOS](https://is.gd/71u78p)](https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/)
+![](https://img.shields.io/badge/Solidity-0.4.24-informational?style=flat&logo=solidity&logoColor=9B96BE&color=2B247C)
 ![](https://img.shields.io/badge/Ubuntu-22.04.3-informational?style=flat&logo=ubuntu&logoColor=e95420&color=e95420)
 ![Java](https://is.gd/QQflSA)
 
@@ -369,18 +370,129 @@ FISCO-BCOS目前主要存在[2.x](https://fisco-bcos-documentation.readthedocs.i
          }
      }
      Copy to clipboard
-第二步. 部署HelloWorld合约
+   - ### 第二步. 部署HelloWorld合约
+     为了方便用户快速体验，HelloWorld合约已经内置于控制台中，位于控制台目录下`contracts/solidity/HelloWorld.sol`。
+     
+     ⌨️在控制台输入以下指令，部署成功则返回合约地址
+     ```bash
+     deploy HelloWorld
+     ```
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/c4a49a86-0c5e-4206-9475-1c8508e61de1)
+
+   - ### 第三步. 调用HelloWorld合约
+     🔎查看当前块高
+     ```bash
+     getBlockNumber
+     ```
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/1a37223b-4e3f-408e-b8e2-7846ba7afbeb)
+
+     🔃调用get接口获取name变量，此处的**合约地址**是deploy指令返回的地址
+     ```bash
+     # 合约地址使用deploy返回的地址，不要使用案例地址
+     call HelloWorld 0xc769e9877fbab23ecf93aee74e6b06e2602392d8 get
+     ```
+
+     🔎查看当前块高，块高不变，因为get接口不更改账本状态
+     ```bash
+     getBlockNumber
+     ```
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/7ca7e01e-f5d6-42ba-a6ce-2fdb057097e3)
+
+
+     📝调用set设置name
+     ```bash
+     # 合约地址使用deploy返回的地址，不要使用案例地址
+     call HelloWorld 0xc769e9877fbab23ecf93aee74e6b06e2602392d8 set "Hello, FISCO BCOS"
+     ```
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/3922907a-d216-4907-94e4-71852faed1a6)
+
+     🔎再次查看当前块高，块高增加表示已出块，账本状态已更改
+     ```bash
+     getBlockNumber
+     ```
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/fe918d7b-084b-4085-a80b-9e16de56fc27)
+
+     🔃调用get接口获取name变量，检查设置是否生效
+     ```bash
+     # 合约地址使用deploy返回的地址，不要使用案例地址
+     call HelloWorld 0xc769e9877fbab23ecf93aee74e6b06e2602392d8 get
+     ```
+     ![image](https://github.com/shadowNo-1/FISCO-BCOS_Build_Tutorial/assets/61909905/e4303eda-1c99-4086-978e-5b14e5cf225d)
+
+     调用get接口获取name变量，检查设置是否生效
+     ```bash
+     quit
+     ```
+
+     输出综合
+     ```bash
+     [group:1]> getBlockNumber  # 查看当前块高
+     1
+     
+     [group:1]> call HelloWorld 0xc769e9877fbab23ecf93aee74e6b06e2602392d8 get  # 调用get接口获取name变量 此处的合约地址是deploy指令返回的地址
+     ---------------------------------------------------------------------------------------------
+     Return code: 0
+     description: transaction executed successfully
+     Return message: Success
+     ---------------------------------------------------------------------------------------------
+     Return value size:1
+     Return types: (STRING)
+     Return values:(Hello, World!)
+     ---------------------------------------------------------------------------------------------
+     
+     [group:1]> getBlockNumber  # 查看当前块高，块高不变，因为get接口不更改账本状态
+     1
+     
+     [group:1]> call HelloWorld 0xc769e9877fbab23ecf93aee74e6b06e2602392d8 set "Hello, FISCO BCOS"  # 调用set设置name
+     transaction hash: 0x3fa73b2ef1daf616838b12bef8868e1358cdd3af930e4e9341e69b6e2095cc09
+     ---------------------------------------------------------------------------------------------
+     transaction status: 0x0
+     description: transaction executed successfully
+     ---------------------------------------------------------------------------------------------
+     Transaction inputs:
+     Input value size:1
+     Input types: (STRING)
+     Input values:(Hello, FISCO BCOS)
+     ---------------------------------------------------------------------------------------------
+     Receipt message: Success
+     Return message: Success
+     Return values:[]
+     ---------------------------------------------------------------------------------------------
+     Event logs
+     Event: {}
+     
+     [group:1]> getBlockNumber  # 再次查看当前块高，块高增加表示已出块，账本状态已更改
+     2
+     
+     [group:1]> call HelloWorld 0xc769e9877fbab23ecf93aee74e6b06e2602392d8 get  # 调用get接口获取name变量，检查设置是否生效
+     ---------------------------------------------------------------------------------------------
+     Return code: 0
+     description: transaction executed successfully
+     Return message: Success
+     ---------------------------------------------------------------------------------------------
+     Return value size:1
+     Return types: (STRING)
+     Return values:(Hello, FISCO BCOS)
+     ---------------------------------------------------------------------------------------------
+     
+     [group:1]> quit  # 退出控制台
      ```
 
 
 
 
+## 引用以及许可
+部分内容转自FISCO BCOS技术文档
 
 
 
 
 
 
+##
+##
+##
+##
 
 
 ## Golang
